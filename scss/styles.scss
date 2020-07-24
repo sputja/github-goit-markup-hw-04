@@ -611,8 +611,15 @@ a {
   letter-spacing: 0.06em;
 
   color: var(--btn--light-color);
-  background: #2196f3; /* #2F303A; */
+  background-color: #2196f3;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+.coordinates--buttom-svg{
+  width: 24px;
+  height: 24px;
+
+  --color3: #ffffff;
+  }
