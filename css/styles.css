@@ -129,7 +129,8 @@ a {
   background-image: linear-gradient(rgba(47, 48, 58, 0.8) rgba(47, 48, 58, 0.8)), url(../img/Header.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 1600px auto;
+  /*  background-size: cover; */
 }
 
 .title--h1 {
@@ -194,14 +195,14 @@ a {
   margin-right: 0;
 }
 
-.about--img {
+.about--img-svg {
   width: 270px;
   height: 120px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.about--img,
+.about--img-svg,
 .work--img {
   border-radius: 4px;
   background-color: #f5f4fa;
@@ -301,11 +302,43 @@ a {
   color: var(--text--dark-color);
 }
 
-.commad--soshial {
+/* .container--list1{
+
+} */
+.command--soshial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.command--soshial-item {
+  margin-left: 10px;
+  /*  width: 44px; */
+}
+
+.command--soshial-item:first-child {
+  margin-left: 0px;
+}
+
+.command--soshial-svg {
+  width: 44px;
+  height: 41px;
+  /*  margin-right: 10px; */
+}
+
+/* .command--soshial-svg:nth-child(1){
+  margin-left: 0px;
+} */
+.command--soshial-link:hover {
+  --color3: var(--accent--color);
+  --color1: var(--text--light-color);
 }
 
 /* Клиенты компании */
@@ -326,6 +359,19 @@ a {
 
 .customers--item:not(6) {
   margin-right: 0;
+}
+
+.customers--svg {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.customers--svg:hover {
+  --color1: var(--accent--color);
 }
 
 /* Портфолио - шапка*/
@@ -389,7 +435,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .work--catalog-item {
@@ -467,11 +513,14 @@ a {
 /* Координаты и обратная связь */
 .coordinates {
   margin-top: 94px;
-  background: #2f303a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f303a), to(#2f303a));
+  background-image: linear-gradient(#2f303a, #2f303a);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px auto;
 }
 
-/*
-.container .coordinates{
+/* .coordinates .container {
 
   } */
 .coordinates--list {
@@ -515,6 +564,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-self: start;
+  margin-top: 20px;
 }
 
 .coordinates--link {
@@ -529,16 +580,22 @@ a {
   /*   background-color: red */
 }
 
-.coordinates--item2 .coordinates--text {
+.coordinates--item1 .coordinates--text, .coordinates--item2 .coordinates--text {
+  /*  display: block; */
   margin: 0;
-  display: block;
+  font-weight: 700;
+  line-height: 1.14px;
+  text-transform: uppercase;
   color: var(--title--light-color);
 }
 
-.coordinates--item1 .coordinates--text {
-  margin: 0;
-  display: block;
-  color: var(--title--light-color);
+.coordinates--list .command--soshial-svg {
+  --color3: rgba(255, 255, 255, 0.1);
+  --color1: var(--text--light-color);
+}
+
+.coordinates--list .command--soshial-svg:hover {
+  --color3: var(--accent--color);
 }
 
 .coordinates--email {
