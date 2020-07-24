@@ -406,12 +406,15 @@ a {
   line-height: 1.62px;
   letter-spacing: 0.03em;
   text-align: center;
-  border-radius: box;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+  /*  border-radius: box;
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1); */
   border-radius: 4px;
+  border-color: #f5f4fa;
+  border-style: none;
   color: var(--btn--dark-color);
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 14px;
