@@ -28,17 +28,24 @@
 					<a class="nav--link" href=./index.html>Контакты</a>
 				</li>
 			</ul>
-			<!-- <div class="contact"> -->
-				<ul class="nav--list1">
+				<ul class="nav--contact">
+					<li class="nav--item1">
+						<a class="nav--link1 " href="mailto:info@devstudio.com">
+							<svg class="nav--item1-svg" width= "16px" height="11px">
+								<use  href="./img/sprite.svg#email"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
 					<li  class="nav--item1">
-						<a class="nav--link1" href="mailto:info@devstudio.com">info@devstudio.com</a>
-
-						</li>
-					<li  class="nav--item1">
-						<a class="nav--link1" href="tel:+380961111111">+38 096 111 11 11</a>
+						<a class="nav--link1 " href="tel:+380961111111">
+							<svg class="nav--item1-svg" width= "10px" height="15px">
+								<use  href="./img/sprite.svg#tel"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
 					</li>
 				</ul>
-			<!-- </div> -->
 			</nav>
 		</div>
 	</header>
@@ -365,12 +372,21 @@
 			</li>
 			<li class="coordinates--item2">
 				<b class="coordinates--text">Подпишитесь на рассылку</b>
-				<input class="coordinates--email" type="email"  placeholder="E-mail" name="email" />
-				<button class="coordinates--buttom" type="submit"> Подписаться
-					<svg class="coordinates--buttom-svg">
-						<use  href="./img/sprite.svg#send"></use>
-					</svg>
-				</button>
+				<ul class="coordinates--subscription">
+					<li>
+						<input class="coordinates--email" type="email"  placeholder="E-mail" name="email" />
+					</li>
+					<li>
+						<button class="coordinates--buttom" type="submit"> Подписаться
+							<svg class="coordinates--buttom-svg">
+								<use  href="./img/sprite.svg#send"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+
+
+
 			</li>
 		</ul>
 		</div>
